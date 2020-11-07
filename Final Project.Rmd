@@ -8,28 +8,40 @@ output: html_document
 
 ### 1 (1 point). 
 
-Identify your data set. Then, describe in a single paragraph what you want to investigate after carefully reviewing the data set and its codebook. 
+#### Identify your data set. Then, describe in a single paragraph what you want to investigate after carefully reviewing the data set and its codebook. 
 
-You will choose two variables to start your investigation.
+We will be using the DOHMH_NYC data set, which is a dataset that includes a mass amount of data on health and safety quality of restaurants and cafes across New York City. After analyzing the multiple variables within the dataset, we are choosing to examine the relationship between the health inspection scores given to New York restaurants and cafes based on the different cuisines the restaurants serve to see if there is any potential bias in how health inspection scores are assigned to restaurants.
+
+#### You will choose two variables to start your investigation.
+
 ### 2 (2 points).  
 
-First, choose a numerical response variable. This is the outcome (response) of your research interest which must be a numerical vector. Provide your rationale for choosing this variable as your response variable, then print the summary statistics of the variable such as mean, standard deviation, median, minimum, and maximum values. Also, produce an appropriate plot using only this variable.
+#### First, choose a numerical response variable. This is the outcome (response) of your research interest which must be a numerical vector. Provide your rationale for choosing this variable as your response variable, then print the summary statistics of the variable such as mean, standard deviation, median, minimum, and maximum values. Also, produce an appropriate plot using only this variable.
+
+The response variable that we will be using is SCORE, which consists of numerical scores given to each restaurant with higher scores indicating less sanitary conditions and lower scores indicating safer food preparation. We chose to use SCORE as our response variable so that we can ultimately assess any potential cultural biases in the restaurant regulation industry and see how scores vary by region. It is the most informative numerical variable provided in the data set.
 
 ### 3 (2 points). 
 
-Examine the plot, and report any unusual observations. Explain why you find some observations strange or unusual. Then, create a new response variable in your data frame using your original response variable. In doing so, you should exclude all of the unusual observations by converting them into NAs.
+#### Examine the plot, and report any unusual observations. Explain why you find some observations strange or unusual. Then, create a new response variable in your data frame using your original response variable. In doing so, you should exclude all of the unusual observations by converting them into NAs.
+
+
+There are several restaurants which were given negative scores. A negative score does not have a meaning within the context of the data.
 
 ### 4 (2 points). 
 
-Now, choose your second variable, which will serve as the main explanatory variable. This could be either numerical or categorical, and it is the variable used to explain the outcome of the variable mentioned in Question 2. Thus, you should choose a variable that you think will be related with the response variable. Explain why you chose this variable as your main explanatory variable, and print the summary of this variable including a plot.  
+#### Now, choose your second variable, which will serve as the main explanatory variable. This could be either numerical or categorical, and it is the variable used to explain the outcome of the variable mentioned in Question 2. Thus, you should choose a variable that you think will be related with the response variable. Explain why you chose this variable as your main explanatory variable, and print the summary of this variable including a plot.  
+
+The main explanatory variable we will be using is CUISINE, a categorical variable which describes the type of food - based on region - offered by the restaurant. We are interested in learning if restaurant scores/ratings are biased with cuisine type. In other words, we are looking for whether certain cuisines representative of minority groups are disproportionately rated lower than others. 
 
 ### 5 (1 point). 
 
-Similar to what you did in Question 3, report any unusual observations in your explanatory variable. Create a new explanatory variable in your data frame using your original response variable. In doing so, you should exclude all of the unusual observations by converting them into NAs.
+#### Similar to what you did in Question 3, report any unusual observations in your explanatory variable. Create a new explanatory variable in your data frame using your original response variable. In doing so, you should exclude all of the unusual observations by converting them into NAs.
 
 ### 6 (3 points). 
 
-Describe what you expect to see regarding a relationship between the two variables you chose in Questions 2 and 4. In other words, how do you expect your explanatory variable (i.e., the predictor) is associated with the response variable (i.e., the outcome)? It is important to remember that your response to this question should be similar to your response for Question 1 with more specific predictions involving the two variables. Be sure to explain why you expect such a pattern between the two variables (i.e., the rationale). 
+#### Describe what you expect to see regarding a relationship between the two variables you chose in Questions 2 and 4. In other words, how do you expect your explanatory variable (i.e., the predictor) is associated with the response variable (i.e., the outcome)? It is important to remember that your response to this question should be similar to your response for Question 1 with more specific predictions involving the two variables. Be sure to explain why you expect such a pattern between the two variables (i.e., the rationale). 
+
+With everything going on in the world right now in terms of discrimination based on race, ethnicity, and culture, it is possible that the health inspection scores given out to restaurants in New York City is biased and impacted by the type of food that restaurants serve. We expect there to be lower scores for cafes and restaurants that serve American food and higher scores for restaurants that serve food from other cultures, assuming that discrimination based on race and culture can also creep into how people view certain cultures in terms of sanitary conditions and health. However, New York City is a very diverse population and is considered the melting pot of the United States, which is why we may not see as much or any discrimination based on cuisine type. This is why we are analyzing these variables to uncover a pattern if there is one. 
 
 ### 7 (2 points). 
 
