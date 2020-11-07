@@ -1,0 +1,78 @@
+---
+title: "QTM Final Project - Restaurant Data"
+author: "Eric Gu, Sergio Eraso, Kristina Trifonova, Jai Arora, Anjanay Nangia"
+output: html_document
+---
+
+## Part A (15 points). Setting up the Research Question & Preliminary Exploratory Analysis
+
+### 1 (1 point). 
+
+Identify your data set. Then, describe in a single paragraph what you want to investigate after carefully reviewing the data set and its codebook. 
+
+You will choose two variables to start your investigation.
+### 2 (2 points).  
+
+First, choose a numerical response variable. This is the outcome (response) of your research interest which must be a numerical vector. Provide your rationale for choosing this variable as your response variable, then print the summary statistics of the variable such as mean, standard deviation, median, minimum, and maximum values. Also, produce an appropriate plot using only this variable.
+
+### 3 (2 points). 
+
+Examine the plot, and report any unusual observations. Explain why you find some observations strange or unusual. Then, create a new response variable in your data frame using your original response variable. In doing so, you should exclude all of the unusual observations by converting them into NAs.
+
+### 4 (2 points). 
+
+Now, choose your second variable, which will serve as the main explanatory variable. This could be either numerical or categorical, and it is the variable used to explain the outcome of the variable mentioned in Question 2. Thus, you should choose a variable that you think will be related with the response variable. Explain why you chose this variable as your main explanatory variable, and print the summary of this variable including a plot.  
+
+### 5 (1 point). 
+
+Similar to what you did in Question 3, report any unusual observations in your explanatory variable. Create a new explanatory variable in your data frame using your original response variable. In doing so, you should exclude all of the unusual observations by converting them into NAs.
+
+### 6 (3 points). 
+
+Describe what you expect to see regarding a relationship between the two variables you chose in Questions 2 and 4. In other words, how do you expect your explanatory variable (i.e., the predictor) is associated with the response variable (i.e., the outcome)? It is important to remember that your response to this question should be similar to your response for Question 1 with more specific predictions involving the two variables. Be sure to explain why you expect such a pattern between the two variables (i.e., the rationale). 
+
+### 7 (2 points). 
+
+Produce a simple plot showing the overall relationship between your two variables by placing the explanatory variable on the x-axis and the response variable on the y-axis. Be sure to label both axes and include a title for the plot by using appropriate arguments. 
+
+### 8 (2 points). 
+
+In plain English, describe the pattern (if any) between the explanatory and the response variables observed in the plot. Did it match your expectation? Why or why not? Explain the outcome.
+
+
+## Part B (17 points). Data Manipulation & Visualization and Conclusion
+1 (2 points). 
+
+In Part A, we observed an overall relationship between two variables. Choose another variable (make sure it's a categorical variable) that can help you investigate this relationship more specifically. This is going to be your secondary explanatory variable. Which variable did you choose? Be sure to provide your rationale for choosing your secondary explanatory variable.
+
+### 2 (2 points). 
+
+Using the two explanatory variables, provide a summary table of the outcome using group_by(), arrange(), and summarize() functions. 
+
+### 3 (2 points). 
+
+Produce an appropriate plot using all three variables. Make sure all of your variables (at least 3) are clearly displayed in the plot. 
+
+### 4 (2 points). 
+
+Describe the plot in plain English. How does this plot differ from the one produced in Part A? Did it match your expectation? Why or why not? Explain the outcome. 
+
+### 5 (2 points). 
+
+Examine your plot again and describe in what ways you can improve it. Here, you can either exclude certain observations/categories, or create a new categorical variable by recoding the categories of the existing variable. Note that you need to clearly justify your actions either way. In other words, why do you think it's necessary to do so, and how do you think your plot will be improved by doing so? 
+
+### 6 (2 points). 
+
+Produce another plot reflecting the modifications you made in Question 5. Describe the plot again. Be sure to specifically describe how this plot is different from the previous one.
+
+### 7 (2 points). 
+
+Choose another explanatory variable (This can be either categorical or numerical). You can either substitute your secondary explanatory variable (i.e., the variable you chose in Question B-1) with this one or add this variable as a fourth variable in your analysis. Explain why you chose this variable to be used with (or instead of) your secondary explanatory variable.
+
+### 8 (2 points). 
+
+Generate another summary table and plot using all of the variables you chose. Describe how this plot looks different from the previous ones.
+
+### 9 (1 point). 
+
+In conclusion, describe what you learned about the outcome using the various explanatory variables you chose. 
