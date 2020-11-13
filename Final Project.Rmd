@@ -3,7 +3,7 @@ title: "QTM Final Project - Restaurant Data"
 author: "Eric Gu, Sergio Eraso, Kristina Trifonova, Jai Arora, Anjanay Nangia"
 output: html_document
 ---
-
+test
 ## Part A (15 points). Setting up the Research Question & Preliminary Exploratory Analysis
 
 ### 1 (1 point). 
